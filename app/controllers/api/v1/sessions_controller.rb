@@ -1,4 +1,4 @@
-class Api::SessionsController < Api::v1::ApiController
+class Api::SessionsController < Api::V1::ApiController
   skip_before_action :user_token_authentication, only: [:create, :refresh]
 
   def create
